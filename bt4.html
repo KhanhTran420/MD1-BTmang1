@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt4</title>
+</head>
+<body>
+<!--     Cach 1-->
+<!--   <script>-->
+<!--       let x = [10,15,20,25,30,35,40,45,50,55]-->
+<!--       let first = 0-->
+<!--       let last = x.length-1-->
+<!--       while (first<last){-->
+<!--           let b = x[first]-->
+<!--           x[first]=x[last]-->
+<!--           x[last] =b-->
+<!--           first ++-->
+<!--           last &#45;&#45;-->
+<!--       }-->
+<!--       document.write(x)-->
+<!--   </script>-->
+
+
+<script>
+    let x = [10,15,20,25,30,35,40,45,50,55]
+    for (let i = 0; i < x.length/2; i++) {
+        let b = x[i]
+        x[i] = x[x.length -i -1]
+        x[x.length -i -1] = b
+    }
+    console.log(x)
+</script>
+</body>
+</html>
